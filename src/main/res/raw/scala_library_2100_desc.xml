@@ -1,0 +1,4 @@
+<permissions>
+  <library name="scala_library-2.10.0"
+    file="/data/data/org.furidamu.scalainstaller/files/scala_library_2100.jar"/>
+</permissions>

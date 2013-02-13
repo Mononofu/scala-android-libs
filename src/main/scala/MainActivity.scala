@@ -1,4 +1,4 @@
-package com.mobilemagic.scalainstaller
+package org.furidamu.scalainstaller
 
 import android.app.Activity
 import android.app.ProgressDialog
@@ -7,7 +7,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 
-class MainActivity extends Activity {
+class MainActivity extends Activity with TypedActivity {
   def installClickListener: View.OnClickListener {def onClick(view: View): Unit} = {
     new View.OnClickListener {
       def onClick(view: View): Unit = {
@@ -65,11 +65,10 @@ class MainActivity extends Activity {
     unInstallButton.setOnClickListener(uninstallClickListener)
   }
 
-
   var progress: ProgressDialog = null
-  lazy val text = findViewById(R.id.text).asInstanceOf[TextView]
-  lazy val installButton = findViewById(R.id.install_button).asInstanceOf[Button]
-  lazy val unInstallButton = findViewById(R.id.uninstall_button).asInstanceOf[Button]
+  lazy val text = findView(TR.text)
+  lazy val installButton = findView(TR.install_button)
+  lazy val unInstallButton = findView(TR.uninstall_button)
 
 }
 

@@ -1,4 +1,4 @@
-package com.mobilemagic.scalainstaller
+package org.furidamu.scalainstaller
 
 import android.content.Context
 import android.util.Log
@@ -29,16 +29,12 @@ object ScalaLibraryInstaller {
   }
 
   final val TAG: String = "ScalaLibInst"
-  val resources = Array(R.raw.scala_actors_291,
-                        R.raw.scala_actors_291_desc,
-                        R.raw.scala_collection_291,
-                        R.raw.scala_collection_291_desc,
-                        R.raw.scala_immutable_291,
-                        R.raw.scala_immutable_291_desc,
-                        R.raw.scala_library_291,
-                        R.raw.scala_library_291_desc,
-                        R.raw.scala_mutable_291,
-                        R.raw.scala_mutable_291_desc)
+  val resources = Array(R.raw.scala_actors_2100,
+                        R.raw.scala_actors_2100_desc,
+                        R.raw.scala_library_2100,
+                        R.raw.scala_library_2100_desc,
+                        R.raw.scala_reflect_2100,
+                        R.raw.scala_reflect_2100_desc)
 
   val runtime: Runtime = Runtime.getRuntime
 }
